@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "musicmod",
+  "version": "${version}",
+  "name": "ServerMusicPlayer",
+  "description": "Upload playlists and play music server-wide with full playlist management.",
+  "authors": ["ServerMusicPlayer"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.musicmod.server.MusicServerMod"],
+    "client": ["com.musicmod.client.MusicClientMod"]
+  },
+  "mixins": ["musicmod.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4"
+  }
+}
